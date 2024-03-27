@@ -396,7 +396,9 @@ img.side-banner-img {
 
 
 /* ========================  About  ==================== */
-
+.tp-about__space {
+    padding: 50px 0;
+}
 .ab-title {
     font-size: 16px;
     color: #fe7f4c;
@@ -533,10 +535,14 @@ p.sec-title {
     gap: 60px;
     padding-top: 40px;
 }
-.bottom-2 {
+/* .bottom-2 {
     position: relative;
     right: 113px;
     bottom: 173px;
+} */
+.bottom-2 {
+    margin-top: -174px;
+    margin-left: -108px;
 }
 .tp-about__author-name{
     font-family: "Manrope", sans-serif;
@@ -559,7 +565,7 @@ p.sec-title {
     align-items: center;
     justify-content: center;
 }
-.ply-img {
+/* .ply-img {
     height: 60px;
     width: 60px;
     background: #fe7f4c;
@@ -572,6 +578,20 @@ p.sec-title {
     right: 191px;
     z-index: 1;
     color: #ffffff;
+} */
+.ply-img {
+    height: 60px;
+    width: 60px;
+    background: rgb(254, 127, 76);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    margin-top: -876px;
+    margin-left: -382px;
 }
 
 .ply-img::before {
@@ -615,3 +635,6 @@ i.fa-solid.fa-play {
     padding: 0px;
     font-size: 1.4rem;
 }
+/* =========================================================================== */
+
+
