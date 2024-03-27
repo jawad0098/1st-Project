@@ -544,7 +544,35 @@ p.sec-title {
 }
 .progress{
     height: 0.6rem;
+    width: 86vh;
+}
+.align-items-center {
+    width: 86vh;
 }
 .progress-bar {
     background-color: #07847f;
+}
+.donation-title {
+    font-size: 0.9rem;
+    line-height: 53px;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+.tp-btn{
+	display: inline-block;
+	background-color:#fe7f4c;
+	color: #fff;
+	height: 58px;
+	line-height: 55px;
+	padding: 0 51px;
+	font-size: 14px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: capitalize;
+	position: relative;
+	transition: all 0.6s linear;
+	overflow: hidden;
+	z-index: 1;
 }
