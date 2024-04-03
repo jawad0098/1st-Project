@@ -389,13 +389,7 @@ p.card-text-1 {
     padding-top: 30px;
 }
 
-i.fa-solid.fa-check {
-    color: #ff4200e8;
-    font-size: 20px;
-    font-weight: 800;
-}
-
-.item-list1 {
+.item-list1{
     display: flex;
     align-items: baseline;
 }
@@ -1289,6 +1283,7 @@ h4.title-cta {
 
 .prov_img {
     position: relative;
+    height: 100%;
 }
 
 .providing_subtitle_title h4 {
@@ -1297,12 +1292,10 @@ h4.title-cta {
     color: #1e3737;
 }
 
-.providing_subtitle_title {
-    margin-left: 35px;
-}
+
 
 .providing_subtitle_title p {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     color: #6E7A7A;
     padding-top: 20px;
@@ -1324,21 +1317,12 @@ h4.title-cta {
 
 .prov.text-title h4 {
     font-size: 26px;
-    font-weight: 700;
-    /* padding: 30px; */
+    font-weight : 700;
     margin-left: 38px;
 }
 
-.providing_button {
-    /* padding: 0px 0; */
-}
-
-.btn-pro {
-
-    : ;
-
-    : #fff;
-    font-family: "Manrope", sans-serif;
+.btn-pro{
+    font-family : "Manrope", sans-serif;
 }
 
 .theme-btn {
@@ -1366,7 +1350,10 @@ button.theme-btn.btn-pro-1 {}
     background: #fe7f4c;
     color: #fff;
 }
-
+.providing_main-area {
+    margin-left: 45px;
+    width: 78%;
+}
 .card-monial-1::after {
     content: "";
     position: absolute;
@@ -1378,3 +1365,38 @@ button.theme-btn.btn-pro-1 {}
     clip-path: polygon(100% 100%, 0 0, 100% 0);
     transition: 0.3s;
 }
+.providing_main-content {
+    display: flex;
+    margin-top: 20px;
+}
+.providing_main-title-subtitle {
+    margin-left: 30px;
+}
+.providing_main-title-subtitle h4 {
+    font-size: 18px;
+    font-weight: 800;
+    color: #1e3737;
+}
+.providing_main-title-subtitle p {
+    color: #6e7a7a;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.providing_icon span {
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+.fa-check:before {
+    content: "\f00c";
+    font-size: 24px;
+    color: #ff4200e8;
+}
+
+/* ================================= Blog-Area-Start ======================================== */
