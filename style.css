@@ -713,7 +713,7 @@ p.card-text {
     text-align: right;
     color: #ffff;
     padding-right: 7px;
-    padding-top: 5px;
+    padding-top: 6px;
     padding-bottom: 4px;
 }
 
@@ -748,7 +748,7 @@ p.card-text {
     text-align: right;
     color: #ffff;
     padding-right: 7px;
-    padding-top: 5px;
+    padding-top: 6px;
     padding-bottom: 4px;
 }
 
@@ -783,7 +783,7 @@ p.card-text {
     text-align: right;
     color: #ffff;
     padding-right: 7px;
-    padding-top: 5px;
+    padding-top: 6px;
     padding-bottom: 4px;
 }
 
@@ -901,18 +901,11 @@ p.card-text {
     font-weight: 700;
 }
 
-.card {
+.card.donate__card{
     overflow: hidden;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, .125);
-    border-radius: .25rem;
-    padding-bottom: 140px;
+    padding-bottom : 140px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 
 .card-hd {
@@ -1104,6 +1097,29 @@ h4.testimonial-title {
 
 .event-subtitle {
     text-align: center;
+    position: relative;
+}
+.event-subtitle span::before{
+    content: "";
+    height: 2px;
+    width: 10px;
+    background: #fe7f4c;
+    position: absolute;
+    transform: translateY(-50%);
+    z-index: 3;
+    right: 545px;
+    top: 9px;
+}
+.event-subtitle span::after{
+    content: "";
+    height: 2px;
+    width: 30px;
+    background: #07847f;
+    position: absolute;
+    top: 9px;
+    display: flex;
+    transform: translateY(-50%);
+    right: 545px;
 }
 
 .event-subtitle span {
@@ -1119,6 +1135,7 @@ h4.testimonial-title {
     color: #1e3737;
     line-height: 1.2;
     padding-bottom: 55px;
+    padding-top: 20px;
 }
 
 .card-event {
@@ -1357,7 +1374,18 @@ button.theme-btn.btn-pro-1 {}
 .card-monial-1::after {
     content: "";
     position: absolute;
-    bottom: -50px;
+    bottom: -49px;
+    right: 0;
+    height: 50px;
+    width: 40px;
+    background-color: #1e3737;
+    clip-path: polygon(100% 100%, 0 0, 100% 0);
+    transition: 0.3s;
+}
+.card-monial::after {
+    content: "";
+    position: absolute;
+    bottom: -49px;
     right: 0;
     height: 50px;
     width: 40px;
@@ -1400,3 +1428,84 @@ button.theme-btn.btn-pro-1 {}
 }
 
 /* ================================= Blog-Area-Start ======================================== */
+  .blog-area{
+    padding-top: 55px;
+    padding-bottom: 90px;
+  }
+  .container.blog-area{
+    max-width: 1200px;
+  }
+
+  .blog-title_subtitle span::before {
+    content: "";
+    height: 2px;
+    width: 10px;
+    background: #fe7f4c;
+    position: absolute;
+    transform: translateY(-50%);
+    z-index: 3;
+    right: 509px;
+    top: 9px;
+}
+
+.blog-title_subtitle span::after{
+    content: "";
+    height: 2px;
+    width: 30px;
+    background: #07847f;
+    position: absolute;
+    top: 9px;
+    display: flex;
+    transform: translateY(-50%);
+    right: 509px;
+}
+  .blog-title_subtitle{
+    font-size: 16px;
+    color: #fe7f4c;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blog-title_subtitle h4 {
+    color: #022b29;
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: capitalize;
+    line-height: 1.2;
+}
+
+.blog-title__subtitle {
+    position: absolute;
+    bottom: 30px;
+    color: #fff;
+    padding-left: 30px;
+
+}
+
+.blog-title__subtitle h4 {
+font-size: 24px;
+    font-weight: 800;
+    padding-bottom: 4px;
+}
+span.blog-more {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.blog-arrow {
+    display: flex;
+    align-items: center;
+    padding-top: 18px;
+}
+.blog__date{
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+
