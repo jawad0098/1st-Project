@@ -131,7 +131,6 @@ padding-left: 15px;
 color: #ffffff;
 font-size: 15px;
 }
-    padding: 10px;
 a {
     color: #8b9e9e;
     text-decoration: underline
@@ -527,7 +526,11 @@ p.sec-title {
     font-weight: 800;
     font-style: normal;
     border: 0px;
-
+}
+.tp-btn:hover{
+    transition: 0.1s;
+    color: #fff;
+    background-color: #022b29;
 }
 
 .tp-about_bottom {
